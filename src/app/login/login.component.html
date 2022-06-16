@@ -1,0 +1,121 @@
+<!-- <div class="form-container">
+<ion-app> -->
+  <!-- <ion-header translucent>
+    <ion-toolbar>
+      <ion-title>Doctor consult</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+  <!-- <ion-content [fullscreen]="true">
+
+    <ion-grid>
+           <ion-col> -->
+        <!-- <ion-text class="Consult-txt  mb-2" color="black">
+          <h1 class="Consult-txt text-center"><img src="/assets/Vector.jpg" alt="">Consult</h1>
+        </ion-text> -->
+        <!-- <div class=" text-center mt-5"> <img src="/assets/doctor-slide1.jpg" alt=""></div>
+        <form [formGroup]="loginForm" novalidate >
+        <ion-card>
+          <ion-card-header> -->
+            <!-- <ion-card-title class="text-center">
+             Welcome to Doctor Consult !
+            </ion-card-title> -->
+          <!-- </ion-card-header>
+          <ion-card-content cla>
+            <ion-list>
+             <ion-item>
+              <ion-input type="email" placeholder="Email Adress" formControlName="emailId"  ></ion-input>
+             </ion-item> -->
+             <!-- <div class="show-error">
+              <div *ngIf="loginForm.get('emailId').hasError('required') && loginForm.get('emailId').dirty">Please enter email id
+              </div>
+              <div *ngIf="loginForm.get('emailId').hasError('email') && loginForm.get('emailId').dirty">
+                Please enter valid email id</div>
+            </div>
+             <ion-item>
+               <ion-input placeholder="Password" formControlName="password" type="password"></ion-input>
+             </ion-item> -->
+             <!-- <div>
+             <a href="#" class="forgot-txt" >Forgot Password</a>
+            </div> -->
+             <!-- <div class="bottom-section">
+              <ion-button [routerLink]="['/get-started']" (click)="navigateToLoginPage(); logIn(email, password)" >Sign In</ion-button>
+
+               <span > Don't have an account ? <a href="" [routerLink]="['/sign-up']" (click)="navigateToSignUp()"> Sign Up</a></span>
+             </div> -->
+             <!-- <ion-row>
+              <ion-col>
+                <ion-button type="submit" color="danger" (click)="authService.GoogleAuth()"
+                  expand="block">  Login with Google </ion-button>
+              </ion-col>
+            </ion-row> -->
+
+            <!-- </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </form>
+
+      </ion-col> -->
+
+    <!-- </ion-grid>
+
+  </ion-content>
+</ion-app>
+</div> -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Doctor-consulation</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+     <ion-text class="Consult-txt  mb-2 " color="black">
+          <h1 class="Consult-txt text-center mt-3"><img src="/assets/Vector.jpg" alt="">Consult</h1>
+          <div class=" text-center"> <img src="/assets/doctor-slide1.jpg" alt=""></div>
+        </ion-text>
+           <ion-card-title class="text-center">
+             Welcome to Doctor Consult !
+            </ion-card-title>
+            <p class="text-center"> Please Login with Your account deatils</p>
+  <ion-item lines="full">
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="text" #email required></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" #password required></ion-input>
+  </ion-item>
+  <ion-row>
+    <ion-col>
+      <ion-button type="submit" class="btn-login" (click)="logIn(email, password)" expand="block"
+        >Login</ion-button
+      >
+    </ion-col>
+  </ion-row>
+  <!-- <ion-row>
+    <ion-col>
+      <ion-button
+        expand="block"
+        color="warning"
+        [routerLink]="['/password-reset']"
+      >
+        Password Reset
+      </ion-button>
+    </ion-col>
+  </ion-row> -->
+  <ion-row>
+    <ion-col>
+      <ion-button
+        type="submit"
+        color="danger"
+        (click)="authService.GoogleAuth()"
+        expand="block"
+      >
+        Login with Google
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+

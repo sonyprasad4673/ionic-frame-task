@@ -132,6 +132,8 @@
       <p>Remember, you can lead a healthier life by simply making small changes, one at a time. Start by picking a few
         of your favourite tips mentioned in this article and incorporating them into your daily routine!</p>
     </ion-text>
-    <ion-button color="success" id="get-btn" expand="block" routerLink="/home">Back to Home page</ion-button>
+    <!-- <ion-button color="success" id="get-btn" expand="block" routerLink="/home">Back to Home page</ion-button> -->
+    <ion-button type="submit" (click)="authService.SignOut()" expand="block">Logout</ion-button>
+    <!-- <ion-button color="success"id="get-btn" expand="block" routerLink="/get-started">Back to Home page</ion-button> -->
   </ion-content>
 </ion-app>
