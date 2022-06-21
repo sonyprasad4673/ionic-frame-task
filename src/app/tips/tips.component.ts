@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthenticationService } from '../shared/authentication-service';
 
 @Component({
@@ -8,7 +9,14 @@ import { AuthenticationService } from '../shared/authentication-service';
 })
 export class TipsComponent implements OnInit {
 
-  constructor(public authService: AuthenticationService) { }
+  constructor(public authService: AuthenticationService,private router: Router) {
+
+   }
+   logout() {
+    this.authService.logout().subscribe(() =>{
+      this.router.navigate(['']);
+    });
+  }
 
   ngOnInit() {}
 

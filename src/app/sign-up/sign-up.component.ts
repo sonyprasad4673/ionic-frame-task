@@ -12,9 +12,7 @@ export class SignUpComponent implements OnInit {
 
   ngOnInit() {}
 
-  navigateToLoginPage(){
-  this.router.navigate(['login']);
-}
+
 signUp(email, password,){
   this.authService.RegisterUser(email.value, password.value)
   .then((res) => {

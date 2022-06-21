@@ -7,10 +7,12 @@ import {
   AngularFirestore,
   AngularFirestoreDocument,
 } from '@angular/fire/compat/firestore';
+import { from } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
 export class AuthenticationService {
+  [x: string]: any;
   userData: any;
   constructor(
     public afStore: AngularFirestore,
@@ -116,5 +118,9 @@ export class AuthenticationService {
       localStorage.removeItem('user');
       this.router.navigate(['login']);
     });
+  }
+
+  logout() {
+    return from(this.auth.signOut());
   }
 }

@@ -12,11 +12,12 @@ const routes: Routes = [
   //   loadChildren: () =>
   //     import('./home/home.module').then((m) => m.HomePageModule),
   // },
+  {     path:'',  component: SignUpComponent},
   {    path: 'home', component: HomePage},
   {    path: 'get-started', component: GetStartedComponent,  },
   {    path: 'tips',    component: TipsComponent,  },
   {    path: 'login',    component: LoginComponent,  },
-  {    path: '',    component: SignUpComponent,  },
+  {    path: 'sign-up',    component: SignUpComponent,  },
   {
     path: 'verify-email',
     loadChildren: () => import('./verify-email/verify-email.module').then( m => m.VerifyEmailPageModule)

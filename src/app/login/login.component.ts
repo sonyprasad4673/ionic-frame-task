@@ -25,7 +25,7 @@ loginForm = new FormGroup({
     this.authService.SignIn(email.value, password.value)
       .then((res) => {
         if(this.authService.isEmailVerified) {
-          this.router.navigate(['tips']);
+          this.router.navigate(['get-started']);
         } else {
           window.alert('Email is not verified');
           return false;
@@ -46,8 +46,8 @@ loginForm = new FormGroup({
   //   this.router.navigate(['get-started']);
   //    }
 
-  //    navigateToSignUp(){
-  //     this.router.navigate(['sign-up']);
-  //      }
+     navigateToSignUp(){
+      this.router.navigate(['sign-up']);
+       }
 
 }

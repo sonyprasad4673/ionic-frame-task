@@ -1,7 +1,7 @@
 export const environment = {
   firebase: {
     projectId: 'ionic-firebase-9b823',
-    appId: '1:896626468012:web:e603d4b6afdbd3c8216b09',
+    appId: '1:896626468012:android:781d6daf31680e82216b09',
     databaseURL: 'https://ionic-firebase-9b823-default-rtdb.firebaseio.com',
     storageBucket: 'ionic-firebase-9b823.appspot.com',
     apiKey: 'AIzaSyDMVYMXq1-XG6rujdbJCtIEsSGo_7le0cw',
