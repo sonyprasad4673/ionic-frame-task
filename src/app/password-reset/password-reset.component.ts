@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../shared/authentication-service';
 
 @Component({
-  selector: 'app-get-started',
-  templateUrl: './get-started.component.html',
-  styleUrls: ['./get-started.component.scss'],
+  selector: 'app-password-reset',
+  templateUrl: './password-reset.component.html',
+  styleUrls: ['./password-reset.component.scss'],
 })
-export class GetStartedComponent implements OnInit {
+export class PasswordResetComponent implements OnInit {
 
   constructor(public authService: AuthenticationService) { }
 

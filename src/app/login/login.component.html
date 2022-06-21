@@ -1,0 +1,59 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Doctor-consulation</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content  fullscreen={true}>
+     <ion-text class="Consult-txt  mb-2 " color="black">
+          <h1 class="Consult-txt mt-5 ms-4 "><img src="/assets/Vector.jpg" alt="">Consult</h1>
+        </ion-text>
+
+           <ion-card-title class="banner-txt">
+             Welcome Back !
+            </ion-card-title>
+           <img src="/assets/Sign In.svg" alt="" width="75%" class="login-img">
+  <ion-item lines="full " >
+    <ion-label position="floating" class="input-txt">Email <ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="text" #email required></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating" class="input-txt">Password <ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="password" #password required></ion-input>
+  </ion-item>
+<div class="forget-txt">
+  <a routerLink="#" class="forgot-password-link">Forgot Password?</a>
+</div>
+  <ion-row>
+    <ion-col>
+      <ion-button type="submit" class="btn-login" (click)="logIn(email, password)" expand="block"
+        >Sign In</ion-button >
+    </ion-col>
+  </ion-row>
+  <!-- <ion-row>
+    <ion-col>
+      <ion-button type="submit" class="btn-login" (click)="authService.GoogleAuth()" expand="block" id="GoogleBtn" >Login with Google </ion-button>
+    </ion-col>
+  </ion-row> -->
+  <div class="footer-text">
+  <ion-text >Dn't have an account ? <a [routerLink]="['/sign-up']" class="forgot-password-link">Sign Up</a></ion-text>
+</div>
+  <!-- <p class="footer-text">Dn't have an account, <a [routerLink]="['/sign-up']">Sign Up</a></p> -->
+
+  <!-- <ion-row>
+    <ion-col>[routerLink]="['/login']"
+      <ion-button
+        expand="block"
+        color="warning"
+        [routerLink]="['/password-reset']"
+      >
+        Password Reset
+      </ion-button>
+    </ion-col>
+  </ion-row> -->
+
+</ion-content>
+
+

@@ -1,0 +1,91 @@
+<!-- <ion-app>
+   <ion-header translucent>
+    <ion-toolbar>
+      <ion-title>Doctor consult</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+    <!-- <ion-content [fullscreen]="true">  -->
+
+<!-- <ion-content>
+  <h1 class="Consult-txt text-center mt-4"><img src="/assets/Vector.jpg" alt="">Consult</h1>
+      <ion-card>
+        <ion-card-header>
+          <div class=" text-center"> <img src="/assets/doctor-slide1.jpg" alt=""></div>
+          <ion-card-title>
+             Register With Us !
+         </ion-card-title>
+          Your information is safe with us
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            <ion-input placeholder="Full Names" type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input placeholder="Email" type="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input placeholder="Password" type="password"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input placeholder=" confirm Password" type="password"></ion-input>
+          </ion-item>
+
+          <div class="bottom-section">
+            <ion-button type="submit" (click)="signUp(email, password)" expand="block">Register</ion-button>
+            <span> Already have an account ? <a (click)="navigateToLoginPage()"> Sign In</a></span>
+          </div>
+        </ion-card-content>
+      </ion-card>
+
+  </ion-content> -->
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title class="text-center">Doctor-consult</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <form>
+
+      <ion-card-header  class=" text-center">
+        <div> <img src="/assets/doctor-slide1.jpg" alt=""  width="80%"></div>
+        <ion-card-title>
+           Register With Us !
+       </ion-card-title>
+        Your information is safe with us
+      </ion-card-header>
+      <ion-item lines="full" class="">
+        <ion-label position="floating">Name <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input type="text" #name required></ion-input>
+      </ion-item>
+      <ion-item lines="full" class="">
+        <ion-label position="floating">Email <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input type="text" #email required></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Password <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input type="password" #password required></ion-input>
+      </ion-item>
+      <ion-row class="mt-2">
+        <ion-col>
+        <ion-button type="submit" (click)="signUp(email, password)" expand="block" class="RegisetrBtn">Register</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button type="submit" class="btn-login" (click)="authService.GoogleAuth()" expand="block" id="GoogleBtn" >Login with Google </ion-button>
+        </ion-col>
+      </ion-row>
+
+
+
+      <ion-row>
+        <ion-col>
+        <div class="text-center">
+          <!-- <ion-text >Dn't have an account ? <a [routerLink]="['/sign-up']" class="forgot-password-link">Sign Up</a></ion-text> -->
+          <ion-text  > Already have you an account ?<a  [routerLink]="['/login']" class="signIn-link">Sign In</a> </ion-text>
+        </div>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-content>

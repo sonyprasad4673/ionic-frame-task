@@ -1,8 +1,14 @@
-.nxt-btn{
-  border-radius: 50px;
-  border: 1px solid;
-}
+// .nxt-btn{
+//   border-radius: 50px;
+//   border: 1px solid;
+// }
 .Consult-txt{
   color: #06A881;
   font-size: 24px ;
+}
+.nxtBtn{
+  --background:#06A881;
+  display: flex;
+  font-weight: 500;
+  text-transform: none;
 }
